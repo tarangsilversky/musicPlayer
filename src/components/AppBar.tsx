@@ -13,7 +13,7 @@ export function AppBar() {
           console.log('onPress');
         }}
       >
-        <Image source={require('../assets/icons/menu.png')} style={styles.menu} />
+        <Image source={require('../assets/icons/menus.png')} style={styles.menu} />
       </TouchableOpacity>
       <View style={{flexDirection: 'row'}}>
         <Image source={require('../assets/images/profile.jpg')} style={styles.menu}/>
@@ -22,7 +22,7 @@ export function AppBar() {
             console.log('onPress');
           }}
         >
-          <Image source={require('../assets/icons/threeDot.png')} style={styles.menu} />
+          <Image source={require('../assets/icons/dots.png')} style={styles.menu} />
         </TouchableOpacity>
     </View>
     </View>
@@ -33,8 +33,8 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    flex: 1,
     backgroundColor: '#F5FCFF',
+      marginBottom: 25,
   },
   menu: {
     width: 35,

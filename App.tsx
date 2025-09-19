@@ -1,11 +1,13 @@
 import { StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { AppBar } from './src/components/AppBar.tsx';
+import {SearchBar} from "./src/components/SearchBar.tsx";
 function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <AppBar />
+        <AppBar />
+        <SearchBar />
     </SafeAreaView>
   );
 }
