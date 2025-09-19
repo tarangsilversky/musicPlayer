@@ -1,0 +1,5 @@
+UI: Instagram
+Feature: Home Page with Navigation bar UI (without implementation)
+story click: popup image for 5 second and close it + close btn
+multi image post should be slideable
+post click make single zoomable post

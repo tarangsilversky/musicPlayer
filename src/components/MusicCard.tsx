@@ -8,8 +8,8 @@ export function MusicCard({title, singer, image} : {title: string, singer: strin
     >
       <View style={styles.musicDetail} />
       <View style={styles.cardDetail}>
-        <Text style={styles.cardText}> {title} </Text>
-        <Text style={styles.cardText}> {singer} </Text>
+        <Text numberOfLines={1} style={styles.cardText}> {title} </Text>
+        <Text numberOfLines={1} style={styles.cardText}> {singer} </Text>
       </View>
     </ImageBackground>
   );
@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
     left: 10,
   },
   cardText: {
+    width: '80%',
     opacity: 1,
     color: 'white',
   },
