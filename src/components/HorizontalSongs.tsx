@@ -1,25 +1,23 @@
-import { FlatList, StyleSheet, View } from 'react-native';
-import { data } from '../tempData/Data.tsx';
+import { FlatList, StyleSheet } from 'react-native';
+import { musicData } from '../tempData/MusicData.tsx';
 import { MusicCard } from './MusicCard.tsx';
 
 export function HorizontalSongs() {
   return(
-    // <View style={styles.horizontalSongsScrollBar}>
       <FlatList
-        style={{flexGrow: 1, flex: 1}}
+        style={styles.flatList}
         horizontal={true}
-        data={data}
+        data={musicData}
         showsHorizontalScrollIndicator={false}
         renderItem={({ item }) => <MusicCard title={item.title} singer={item.singer} image={item.image}/>}
         keyExtractor={(item) => item.title}
       />
-    // {/*</View>*/}
   );
 }
 
-// const styles = StyleSheet.create({
-//   horizontalSongsScrollBar: {
-//     width: '100%',
-//     height: 200,
-//   }
-// })
+const styles = StyleSheet.create({
+  flatList: {
+    flexGrow: 1,
+    flex: 1
+  }
+})

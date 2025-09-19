@@ -1,5 +1,4 @@
 import {
-  Alert,
   Image,
   ScrollView,
   StyleSheet,
@@ -12,6 +11,7 @@ import { AppBar } from './src/components/AppBar.tsx';
 import {SearchBar} from "./src/components/SearchBar.tsx";
 import {Banner} from "./src/components/Banner.tsx";
 import { HorizontalSongs } from './src/components/HorizontalSongs.tsx';
+import { GenreList } from './src/components/GenreList.tsx';
 function App() {
 
   return (
@@ -28,6 +28,7 @@ function App() {
         </View>
         <HorizontalSongs />
         <Text style={styles.titleText}> By Genre </Text>
+        <GenreList />
       </ScrollView>
     </SafeAreaView>
   );
@@ -35,7 +36,7 @@ function App() {
 
 const styles = StyleSheet.create({
   scrollView: {
-    flex: 1
+    flex: 1,
   },
   container: {
     padding: 10,
