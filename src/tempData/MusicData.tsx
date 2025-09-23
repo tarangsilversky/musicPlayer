@@ -16,7 +16,7 @@ export const genreData = [
   {genre: 'Pop', image: require('../assets/genre/pop.jpg')},
   {genre: 'Electronic', image: require('../assets/genre/electronic.jpg')},
   {genre: 'Jazz', image: require('../assets/genre/jazz.jpg')},
-  {genre: 'Rock', image: require('../assets/genre/rock.jpg')}, //TODO: Add Image of Rock Genre
+  {genre: 'Rock', image: require('../assets/genre/rock.jpg')},
   {genre: 'Hip Hop', image: require('../assets/genre/hiphop.jpg')},
   {genre: 'Folk', image: require('../assets/genre/folk.jpg')},
   {genre: 'Funk', image: require('../assets/genre/funk.jpg')},
